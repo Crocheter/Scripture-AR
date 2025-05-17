@@ -37,24 +37,15 @@
       vr-mode-ui="enabled: false;"
       renderer="logarithmicDepthBuffer: true;"
       embedded
-      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
-    >
+      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
       <!-- a-nft is the anchor that defines an Image Tracking entity -->
       <!-- on 'url' use the path to the Image Descriptors created before. -->
       <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
-      <a-nft
-        type="nft"
-        url="./Assets/resizing"
-        smooth="true"
-        smoothCount="10"
-        smoothTolerance=".01"
-        smoothThreshold="5">
         <!-- as a child of the a-nft entity, you can define the content to show.-->
-        <a-box position="0 0.5 0" color="blue" depth="0.1" height="0.1" width="0.1"></a-box>
+      <a-nft type="nft" url="./Assets/resizing">
+        <a-box color="red" position="0 0.5 0" depth="0.1" height="0.1" width="0.1"></a-box>
       </a-nft>
       <!-- static camera that moves according to the device movemenents -->
-      <!-- a-entity light="type: ambient; intensity: 1"></a-entity -->
-      <!-- a-entity light="type: directional; intensity: 0.6" position="1 1 0"></a-entity -->
       <a-entity camera></a-entity>
     </a-scene>
   </body>
