@@ -55,11 +55,12 @@
           width="1"
           height="1"
           position="0 0 0"
-          rotation="-90 0 0"
-          material="shader: flat">
+          rotation="-90 0 0">
         </a-plane>
       </a-nft>
       <!-- static camera that moves according to the device movemenents -->
+      <a-entity light="type: ambient; intensity: 1"></a-entity>
+      <a-entity light="type: directional; intensity: 0.6" position="1 1 0"></a-entity>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
