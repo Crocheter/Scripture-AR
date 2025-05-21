@@ -36,22 +36,26 @@
       arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
     >
       <a-entity light="type: ambient; intensity: 1"></a-entity>
+      <a-assets>
+        <img id="myImage" src="./Assets/7.jpg">
+      </a-assets>
 
       <a-nft
         type="nft"
-        url="./Assets/be joyful"
+        url="./Assets/bejoyful"
         smooth="true"
         smoothCount="10"
         smoothTolerance=".01"
         smoothThreshold="5"
       >
-        <a-box
-          color="red"
-          position="0 0.5 0"
-          depth="1"
-          height="1"
-          width="1"
-        ></a-box>
+        <a-plane
+          src="#myImage"
+          width="35"
+          height="35"
+          position="0.001 0.008 -0.002"
+          rotation="-90 0 0"
+          >
+        </a-plane>
       </a-nft>
 
       <a-entity camera></a-entity>
